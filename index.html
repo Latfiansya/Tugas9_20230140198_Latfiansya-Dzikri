@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Web Kami</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Bootstrap</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active fw-semibold" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+            </li>
+            </ul>
+                <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+        </div>
+    </div>
+</nav>
+
+<!-- Carousel -->
+<div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+    </div>
+    
+    <!-- Slides -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="https://source.unsplash.com/random/1200x400/?web-design" class="d-block w-100" alt="Web Design">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Desain Profesional</h5>
+                <p>Solusi desain web modern untuk bisnis Anda</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://source.unsplash.com/random/1200x400/?development" class="d-block w-100" alt="Development">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Pengembangan Berkualitas</h5>
+                <p>Tim developer berpengalaman siap membantu</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="https://source.unsplash.com/random/1200x400/?seo" class="d-block w-100" alt="SEO">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Optimasi SEO</h5>
+                <p>Tingkatkan visibilitas website Anda</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+<!-- Judul -->
+<div class="text-center my-4">
+    <h4 class="fw-semibold">Praktikum Bootstrap</h4>
+</div>
+
+<!-- Section Selamat Datang -->
+<div class="container mb-5">
+    <div class="jumbotron text-center">
+        <h1 class="fw-bold mb-4">Selamat Datang di Web Kami!</h1>
+        <p class="mb-4">
+            Perusahaan itu sendiri adalah perusahaan yang sangat sukses. Kadang tidak suka dengan pilihan kekinian? 
+            Adalah keinginan kita untuk menolak orang lain, sehingga kita jatuh ke dalam kelemahan kebenaran, dan 
+            ke beberapa dari rasa sakit itu, yang kita tuduh lakukan.
+        </p>
+        <a href="#" class="btn btn-primary btn-custom me-2">Klik Saya</a>
+        <a href="#" class="btn btn-secondary btn-custom">Kunjungi Situs</a>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Layanan Kami</h2>
+    <div class="row">
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://source.unsplash.com/random/300x200/?design" class="card-img-top" alt="Web Design">
+                <div class="card-body">
+                    <h5 class="card-title">Desain Web</h5>
+                    <p class="card-text">Desain responsif dan modern untuk semua perangkat.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://source.unsplash.com/random/300x200/?app" class="card-img-top" alt="Development">
+                <div class="card-body">
+                    <h5 class="card-title">Pengembangan</h5>
+                    <p class="card-text">Bangun aplikasi web dengan teknologi terkini.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-4">
+            <div class="card h-100">
+                <img src="https://source.unsplash.com/random/300x200/?analytics" class="card-img-top" alt="SEO">
+                <div class="card-body">
+                    <h5 class="card-title">Optimasi SEO</h5>
+                    <p class="card-text">Tingkatkan peringkat website di mesin pencari.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <div class="row text-center">
+        <div class="col-md-3 mb-4">
+            <h3 class="counter" data-target="150">56</h3>
+            <p>Proyek Selesai</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <h3 class="counter" data-target="50">51</h3>
+            <p>Klien Puas</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <h3 class="counter" data-target="10">6</h3>
+            <p>Penghargaan</p>
+        </div>
+        <div class="col-md-3 mb-4">
+            <h3 class="counter" data-target="24">15</h3>
+            <p>Dukungan 24/7</p>
+        </div>
+    </div>
+</div>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Hubungi Kami</h2>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Nama Lengkap</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Pesan</label>
+                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <div class="row text-center text-md-start">
+            <div class="col-md-6 mb-3">
+            <h5>Kontak Kami</h5>
+            <div>Telepon</div>
+            <div>0821-55048196</div>
+            </div>
+            <div class="col-md-6 mb-3">
+            <h5>Alamat</h5>
+            <div>Jl. Anggrek, Geblagan, Tamantirto, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55183</div>
+            </div>
+        </div>
+        <div class="text-center mt-3">&copy; 2025</div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+        // Pastikan DOM sudah siap
+        document.addEventListener('DOMContentLoaded', function() {
+            // Counter animation
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200;
+
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(updateCount, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+
+                window.addEventListener('scroll', function() {
+                    const counterPosition = counter.getBoundingClientRect().top;
+                    const screenPosition = window.innerHeight;
+                    
+                    if (counterPosition < screenPosition) {
+                        updateCount();
+                    }
+                });
+            });
+
+            // Form submission handler
+            document.getElementById('contactForm').addEventListener('submit', function(e) {
+                e.preventDefault(); // Mencegah form submit default
+                
+                // Validasi sederhana
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const message = document.getElementById('message').value;
+                
+                // Hapus alert sebelumnya jika ada
+                const existingAlert = document.querySelector('.alert-fixed');
+                if (existingAlert) {
+                    existingAlert.remove();
+                }
+                
+                if (name && email && message) {
+                    // Buat elemen notifikasi
+                    const notification = document.createElement('div');
+                    notification.className = 'alert alert-success alert-dismissible fade show alert-fixed';
+                    notification.setAttribute('role', 'alert');
+                    notification.innerHTML = `
+                        <strong>Sukses!</strong> Pesan Anda telah berhasil dikirim.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    `;
+                    
+                    // Tambahkan ke body
+                    document.body.appendChild(notification);
+                    
+                    // Reset form
+                    this.reset();
+                    
+                    // Hilangkan notifikasi setelah 5 detik
+                    setTimeout(() => {
+                        const bsAlert = new bootstrap.Alert(notification);
+                        bsAlert.close();
+                    }, 5000);
+                } else {
+                    // Tampilkan pesan error jika form tidak lengkap
+                    const notification = document.createElement('div');
+                    notification.className = 'alert alert-danger alert-dismissible fade show alert-fixed';
+                    notification.setAttribute('role', 'alert');
+                    notification.innerHTML = `
+                        <strong>Error!</strong> Harap isi semua field yang diperlukan.
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    `;
+                    document.body.appendChild(notification);
+                    
+                    setTimeout(() => {
+                        const bsAlert = new bootstrap.Alert(notification);
+                        bsAlert.close();
+                    }, 5000);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
